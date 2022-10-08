@@ -1,0 +1,271 @@
+/* Custom fonts of course */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+@font-face{
+    font-family: 'Dosis';
+    src: url('Dosis-Book.ttf');
+}
+
+/* getting the menu list just right */
+#menu{
+	float: right;
+	white-space: nowrap;
+    font-family: 'Raleway', sans-serif;
+	margin-right: 5%;
+}
+
+/* Give the menu a clean look with no underline */
+.menuLink:link,.menuLink:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* on hover, turn menu blue and give it an underline... cuz why not? */
+.menuLink:hover,.menuLink:active{
+    color: blue;
+	text-decoration: underline;
+}
+
+/* remove the bulltes from the menu list and give it a nice look */
+ul{
+    list-style-type: none;
+    font-size: x-large;
+    line-height: 1.4em;
+    text-align: right;
+    margin-right: 5%;
+	padding-left: 55px;
+}
+
+/* setting font */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* getting the /beautiful/ picture of myself just right :D */
+img{ 
+    width: 100%;
+    float: right;
+}
+
+.myImg{
+    width: 37.5%;
+    float: right;
+    margin-right: 5%;
+	box-shadow: 0 0 4px 4px black;
+}
+
+/* Changing the font of my short description to give it a more personalized feel */
+.myBlurb{
+    width: 50%;
+    letter-spacing: .04em;
+    font-size: 225%;
+    font-family: 'Dosis';
+}
+
+#main{
+    min-height: 300px;
+    width: 50%;
+    margin: auto;
+}
+
+/* Got those nice big titles again */
+h1{
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    text-align: center;
+    font-size:  60px;
+}
+
+/* using an aside because I want that side line */
+aside {
+    padding-left: .75rem;
+    margin-left: 10%;
+    float: left;
+    border-left: solid black;
+    border-radius: 3px;
+}
+
+/* getting a fancy button going */
+#contactMe{
+    margin-left: 10%;
+    float: left;
+    clear: both;
+    width: 30%;
+}
+
+/* getting another fancy button going */
+#resumeDiv{
+    margin-right: 11.5%;
+    float: right;
+    width: 30%;
+	margin-bottom: 3%;
+}
+
+/* butting in a line to separate my sections */
+#hLine{
+    margin-top: 20%;
+    clear: both;
+    border: 1px solid rgba(0, 0, 0, 0.644); 
+    width: 100%;
+}
+
+/* getting the fancy button just right by making a ton of minor adjustments */
+.contact-button {
+    max-width: 50%;
+    float: left;
+    clear: both;
+    margin-top: 7%;
+    margin-left: 10%;
+	position: relative;
+	color: black;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 20px 60px 20px 55px;
+	transition: 0.3s ease-in-out;
+}
+
+/* hiding my email in the span so it only shows up on hover */
+.contact-button span {
+	text-transform: none;
+	position: absolute;
+	color: white;
+	top: 20px;
+	left: 30px;
+	opacity: 0;
+	transition: all 0s ease 0s;
+}
+
+/* when hovered, move corners in and hide text */
+.contact-button:hover {
+	transition: 0.3s ease-in-out;
+	border: 2px solid black;
+	border-radius: 50px;
+	background-color: black;
+}
+
+/* when hovered, show my email */
+.contact-button:hover > span {
+	opacity: 1;
+	transition: all 0.25s ease-in-out 0.1s;
+}
+
+/* Final adjustments */
+.contact-button:before, .contact-button:after {
+	content: "";
+	position: absolute;
+	top: -14px;
+	left: -12px;
+	width: 132px;
+	height: 25px;
+}
+
+/* Basically the exact same process as the previous button, but fit slightly differently */
+.resume-button {
+    float: right;
+    clear: both;
+    margin-top: 7%;
+    margin-left: 10%;
+	position: relative;
+	color: black;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 20px 60px 20px 55px;
+	transition: 0.3s ease-in-out;
+}
+.resume-button span {
+    padding-left: 28%;
+    text-align: center;
+	text-transform: none;
+	position: absolute;
+	color: white;
+	top: 20px;
+	left: 30px;
+	opacity: 0;
+	transition: all 0s ease 0s;
+}
+.resume-button:hover {
+	transition: 0.3s ease-in-out;
+	border: 2px solid black;
+	border-radius: 50px;
+	background-color: black;
+}
+.resume-button:hover > span {
+	opacity: 1;
+	transition: all 0.25s ease-in-out 0.1s;
+}
+.resume-button:before, .resume-button:after {
+	content: "";
+	position: absolute;
+	top: -14px;
+	left: -12px;
+	width: 132px;
+	height: 25px;
+}
+
+/* setting up all of the things below the horizontal line */
+h2{
+	margin-top: 7%;
+	clear:both;
+	font-size: x-large;
+}
+
+/* moving the table to the right place */
+table{
+	margin-left: 15%;
+}
+
+/* making sure this is no text wrapping because it gets annoying */
+td, th, tr{
+	white-space: nowrap;
+}
+
+th{
+	font-weight:lighter;
+}
+
+/* go bold to show off work history */
+.workHistory{
+	white-space: nowrap;
+	margin-right: 7.5%;
+	margin-left: 50%;
+	font-weight:normal;
+}
+
+dl, dt, dd{
+	font-family: 'Raleway', sans-serif;
+	text-align: left;
+}
+
+dt{
+	font-weight: bold;
+}
+
+dl{
+	margin-top: 5%;
+	padding-top: 65px;
+}
+
+/* made the description feel like a description instead of being the same as title */
+dd{
+	font-weight:lighter;
+}
+
+/* add a small area with some skills I have */
+#skills{
+	font-size: large;
+	font-weight: bold;
+}
+
+/* make the title for work history large */
+#workHistoryTitle{
+	font-size: xx-large;
+	font-weight: bold;
+}

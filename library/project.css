@@ -1,0 +1,63 @@
+/* Custom fonts */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+/* Big titles :) */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  60px;
+    margin-left: 13%;
+    text-align: center;
+}
+
+/* getting the menu list just right */
+#menu{
+	float: right;
+	white-space: nowrap;
+    font-family: 'Raleway', sans-serif;
+	margin-right: 4.15%;
+}
+
+/* Give the menu a clean look with no underline */
+.menuLink:link,.menuLink:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.inlineLink:link,.menuLink:visited{
+    text-decoration: none;
+    color: blue;
+}
+
+/* on hover, turn menu blue and give it an underline... cuz why not? */
+.menuLink:hover,.menuLink:active,.inlineLink:active,.inlineLink:hover{
+    color: blue;
+	text-decoration: underline;
+}
+
+/* remove the bulltes from the menu list and give it a nice look */
+ul{
+    list-style-type: none;
+    font-size: x-large;
+    line-height: 1.4em;
+    text-align: right;
+    margin-right: 5%;
+	padding-left: 55px;
+}
+
+/* style the description of the project */
+#desc{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 25%;
+    font-size: 35px;
+    line-height: 130%;
+    width: 50%;
+}
+
+/* style the image for the project */
+.projectImg{
+    clear: both;
+    margin-right: 25%;
+    float: right;
+    width: 25%;
+    border-radius: 50px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Author: Jacob Gibson
+    Date: 4/16/2021
+    Modification History:
+    4/17/21 - added fancy buttons
+-->
+<!-- Tested in MS Edge, Google Chrome, and Firefox-->
+<!-- All browsers seemed to display the same -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>About | Jacob Gibson</title>
+        <link rel="stylesheet" href="about/about.css">
+    </head>
+    <body>
+        <div id = "menu">
+            <ul> <!-- example of unordered list -->
+                <li>
+                    <a class="menuLink" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a class="menuLink" href="library.html">Projects</a>
+                </li>
+                <li>
+                    <a class="menuLink" href="about.html" style="padding-right: 10px">About Me</a> <!-- had to be adjusted a little because of line wrapping and alignment issues -->
+                </li>
+            </ul>
+        </div> <!-- menu -->
+        <div id = "main">
+            <br><h1>About Me</h1>
+            <div class = "myImg" >
+                <img src='about/picOfMeBW.png' alt="Beautiful picture of me!">
+            </div> <!-- myImg -->
+            <div class = "myBlurb">
+                <aside>My name is Jacob Gibson, I'm currently majoring in Computer Science and Media Arts (for Game Development) at IUPUI, Indianapolis. If you like what I do, you can contact me here for more info. </aside>
+            </div> <!-- myBlurb -->
+            <div>
+                <div id = "contactMe">
+                    <a href="mailto:jacobibs@iu.edu" target="_blank" class="contact-button"><!-- should open email client when clicked -->
+                        Contact Me
+                        <span>jacogibs@iu.edu</span>
+                    </a>
+                </div> <!-- contact me -->
+                <div id = "resumeDiv">
+                    <a href="about/resume.pdf" target="_blank" class="resume-button"> <!-- goes to a pdf of my resume -->
+                        Full Resumé
+                        <span>PDF</span>
+                    </a>
+                </div> <!-- resume -->
+            </div>  
+            <div id = "hLine"></div> <!-- example of table down below -->
+            <table> <!-- I know that we're not supposed to use tables to style things -->
+                <tr> <!-- but honestly given they layout and plan of my website, it think it's best -->
+                    <th id = "workHistoryTitle"> <!-- that this is the only table I have. -->
+                        Work History:
+                    </th>
+                    <th>
+                        <div class="workHistory">
+                            <dl>
+                                <dt>The Virtual Galaxy | Aug 2018 - Current</dt>
+                                <dd>Assistant Manager<br></dd> 
+                                <dt>Indiana National Guard Intern | Aug 2019 - Mar 2020</dt>
+                                <dd>Tech Support</dd>
+                            </dl>
+                        </div>       
+                    </th>
+                </tr>
+                <tr><th id = "skills">Skills</th> <th></th> </tr>
+                <tr><th>C++</th> <th></th> </tr>
+                <tr><th>Java</th> <th></th> </tr>
+                <tr><th>Python</th> <th></th> </tr>
+                <tr><th>Web Dev</th> <th></th> </tr>
+            </table>
+        </div> <!-- main-->
+    </body>
+</html>

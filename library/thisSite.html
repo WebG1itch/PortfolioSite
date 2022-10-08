@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Author: Jacob Gibson
+    Date: 4/21/2021
+-->
+<!-- Tested in MS Edge, Google Chrome, and Firefox-->
+<!-- All browsers seemed to display the same -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>This Site | Jacob Gibson</title>
+        <link rel="stylesheet" href="project.css">
+        <!-- embedded stylesheet, with specific adjustments for this page instead of the multi-use 'project.css' -->
+        <style> 
+            /* make style adjustments to the gallery for this project */
+            .imgLeft{
+                width:25%;
+                margin-left:25%;
+            }
+
+            .imgRight{
+                width:25%;
+            }
+
+            .imgCenter{
+                margin-left:33%;
+                margin-right:33%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "menu">
+            <ul>
+                <li>
+                    <a class="menuLink" href="../home.html">Home</a>
+                </li>
+                <li>
+                    <a class="menuLink" href="../library.html">Projects</a>
+                </li>
+                <li>
+                    <a class="menuLink" href="../about.html" style="padding-right: 10px">About Me </a> <!-- had to be adjusted a little because of line wrapping and alignment issues -->
+                </li>
+            </ul>
+        </div>
+        <div id = "main">
+            <br><h1>About this site:</h1>
+            <img src="thisSite/aboutMePage.png" style="border-radius:0px;" class="projectImg" alt="reference image for site"> <!-- adjust this image to not have rounded corners -->
+            <div id = "desc">
+                <p>This website was my final project for a web design and development class.
+                    I figured that this was a perfect opportunity to put myself out there a
+                    bit more and use everything I've learned so far to represent <em>me</em> the best
+                    I can.
+                </p>
+                <p>
+                    I wrote up all of the code for this site by hand. This site currently uses:
+                </p>
+                    <ol> <!-- example of ordered list -->
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java Script</li>
+                    </ol>
+                <p>
+                    I plan on keeping this site up to date with my most recent projects.
+                </p>
+                <p>
+                    I went through and drew up a template for each of these pages. Then created
+                    a site map to show how everything connected. Down below, I have a small gallery
+                    of reference images that I put together for the site.
+                </p>
+            </div> <!-- desc -->
+        </div> <!-- main -->
+        <img src="thisSite/homePage.jpg" class = "imgLeft" alt="reference image for site">
+        <img src="thisSite/libraryPage.jpg" class = "imgRight" alt="reference image for site">
+        <img src="thisSite/aboutMePage.png" class = "imgLeft" alt="reference image for site">
+        <img src="thisSite/projectPage.png" class = "imgRight" alt="reference image for site">
+        <img src="thisSite/siteMap.png" class = "imgCenter" alt="reference image for site">
+    </body>
+
+</html>

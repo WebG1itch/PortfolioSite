@@ -1,0 +1,140 @@
+/* importing custom fonts of course */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+/* Gotta have the nice big titles */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  60px;
+    margin-left: 13%;
+    text-align: center;
+}
+
+/* getting the menu list just right */
+#menu{
+	float: right;
+	white-space: nowrap;
+    font-family: 'Raleway', sans-serif;
+	margin-right: 5%;
+}
+
+/* Give the menu a clean look with no underline */
+.menuLink:link,.menuLink:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* on hover, turn menu blue and give it an underline... cuz why not? */
+.menuLink:hover,.menuLink:active{
+    color: blue;
+	text-decoration: underline;
+}
+
+/* remove the bulltes from the menu list and give it a nice look */
+ul{
+    list-style-type: none;
+    font-size: x-large;
+    line-height: 1.4em;
+    text-align: right;
+    margin-right: 5%;
+	padding-left: 55px;
+}
+
+* {box-sizing: border-box}
+/* getting the slides to have the right font for captions */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.mySlides {
+    display: none
+}
+
+/* adjusting images so they show up where they should */
+img {
+    vertical-align: middle;
+}
+
+/* creating the slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* getting the next arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -25px;
+    color: black;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 45px;
+    transition: 0.25s ease;
+    user-select: none;
+}
+
+/* properly moving next arrow to the right */
+.next {
+    right: 0;
+}
+
+/* when hovering over button, change to blue 
+(to match the menu) and move to the correct direction */
+.next:hover {
+    color: blue;
+    padding-right:20px;
+}
+
+.prev:hover{
+    color: blue;
+    padding-left:20px;
+}
+
+/* captioning the pictures to give an idea of what the project is */
+.text {
+    color: black;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* creating the little dots below the images to see the number of projects */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 15px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* add a fade because it's fun and I can */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

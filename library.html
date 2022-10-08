@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+    Author: Jacob Gibson
+    Date: 4/20/2021
+-->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Project Library | Jacob Gibson</title>
+        <link rel="stylesheet" href="library/library.css">
+    </head>
+    <body>
+        <div id = "menu">
+            <ul>
+                <li>
+                    <a class="menuLink" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a class="menuLink" href="library.html">Projects</a>
+                </li>
+                <li>
+                    <a class="menuLink" href="about.html" style="padding-right: 10px">About Me </a>  <!-- had to be adjusted a little because of line wrapping and alignment issues -->
+                </li>
+            </ul>
+        </div> <!-- menu -->
+        <div id = "main">
+            <br><h1>Project Library</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <a href="/library/jumpShip.html">
+                        <img src="/library/jumpShip/CaptionedWidePoster.png" style="width:79.5%; margin-left:10%" alt="Jump Ship! poster">
+                    </a>
+                    <div class="text" style="padding: 25em, 0em, 0em, 0em">Jump Ship! - built in Unity, released on the Play Store</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="library/discordBot.html">
+                        <img src="library/DiscordpySnake.png" style="width:100%" alt="Discord Bot picture">
+                    </a>
+                    <div class="text" style="padding: 3em, 0em, 0em, 0em">Discord Bot in Python with the Discord.py library</div>
+                </div> <!-- mySlides, fade -->
+                
+                <div class="mySlides fade">
+                    <a href="library/thisSite.html">
+                        <img src="library/thisSite/aboutMePage.png" style="width:79.5%; margin-left:10%" alt="Site project picture">
+                    </a>
+                    <div class="text" style="padding: 3em, 0em, 0em, 0em">This site! Made with HTML, CSS, and a little JS</div>
+                </div>
+
+                <!--<div class="mySlides fade">
+                    <a href="thisSite.html">
+                        <img src="aboutMePage.png" style="width:79.5%; margin-left:10%">
+                    </a>
+                    <div class="text">Caption Three</div>
+                </div> ^^ for the next project I add -->
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div> <!-- slideshow container -->
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            <!--<span class="dot" onclick="currentSlide(3)"></span> <- for the next project I add --> 
+            </div> 
+    
+        </div> <!-- main--> <!-- fun javascripting down below -->
+        <script> 
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            // when called in the html, goes to next slide
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    // if the slide index is greater then the number of slides, go back to slide one
+                if (n < 1) {slideIndex = slides.length} // in other words, when the arrow is clicked to go to the next slide and it's at the
+                for (i = 0; i < slides.length; i++) { // end, it will go back to the first slide
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+            
+    </body>
+</html>
